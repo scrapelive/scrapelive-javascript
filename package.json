@@ -1,6 +1,6 @@
 {
 	"name": "scrapelive",
-	"version": "0.0.1",
+	"version": "0.0.3",
 	"description": "ScrapeLive node.js request generator",
 	"main": "src/index.js",
 	"scripts": {

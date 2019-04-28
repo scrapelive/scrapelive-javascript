@@ -35,9 +35,11 @@ module.exports = function(key, secret, prefix) {
 	if (!secret) {
 		throw new Error('This package requires an API Secret, if you don\'t already have one get one at https://scrape.live');
 	}
-	*/
 
 	const encKey = CryptoJS.enc.Hex.parse(secret.slice(0,32));
+	*/
+
+	const encKey = CryptoJS.enc.Hex.parse(key.slice(0,32));
 
 	const encryptLoginUsername = (username) => {
 		var encrypted = CryptoJS.AES.encrypt(username, encKey, {
@@ -83,7 +85,8 @@ module.exports = function(key, secret, prefix) {
 			let json = await request.get({
 				url: url,
 				timeout: 999999,
-				json: true
+				json: true,
+				gzip: true
 			});
 
 			if(callback) {
