@@ -1,0 +1,28 @@
+{
+	"name": "scrapelive",
+	"version": "0.0.1",
+	"description": "ScrapeLive node.js request generator",
+	"main": "src/index.js",
+	"scripts": {
+		"test": "mocha"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/ScrapeLive/scrapelive-node.git"
+	},
+	"keywords": [],
+	"author": "Chris Hutchinson",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/ScrapeLive/scrapelive-node/issues"
+	},
+	"homepage": "https://github.com/ScrapeLive/scrapelive-node",
+	"dependencies": {
+		"crypto-js": "^3.1.9-1",
+		"request": "^2.88.0",
+		"request-promise-native": "^1.0.7"
+	},
+	"devDependencies": {
+		"mocha": "^3.3.0"
+	}
+}
